@@ -1,0 +1,9 @@
+inherit kde3
+
+DESCRIPTION="KDE puzzle game"
+HOMEPAGE="http://kpuzzle.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}-final.tar.bz2"
+PATCH_URI="
+	0.4-ac26.patch
+	0.4-vpath.patch
+"

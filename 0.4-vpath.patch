@@ -1,0 +1,24 @@
+--- origsrc/kpuzzle-0.4/doc/en/Makefile.am	2004-07-19 08:32:46.000000000 -0500
++++ src/kpuzzle-0.4/doc/en/Makefile.am	2008-08-12 05:37:06.109962800 -0500
+@@ -1,13 +1,13 @@
+ install-data-local:
+ 	$(mkinstalldirs) $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) index.html $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) cont-1.html $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) cont-2.html $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) cont-3.html $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) cont-4.html $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) cont-5.html $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) scr_1.png $(kde_htmldir)/en/kpuzzle
+-	$(INSTALL_DATA) ulcorner.png $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/index.html $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/cont-1.html $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/cont-2.html $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/cont-3.html $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/cont-4.html $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/cont-5.html $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/scr_1.png $(kde_htmldir)/en/kpuzzle
++	$(INSTALL_DATA) $(srcdir)/ulcorner.png $(kde_htmldir)/en/kpuzzle
+ 	
+ 	cd $(kde_htmldir)/en/kpuzzle; $(LN_S) -f ../common .
+ 
